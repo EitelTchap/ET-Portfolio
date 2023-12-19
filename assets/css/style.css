@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+  }
+  
+/* color scheme sourced from http://khroma.co/generator/ */
+:root {
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    background-color: var(--bright-turquoise);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+    a {
+    scroll-behavior: smooth;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: end;
+    margin: 0px 5%;
+  }
+
+  header h1 {
+    padding: 25px;
+    background-color: var(--outer-space);
+    font-size: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    font-size: 25px;
+  }
+
+li {
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+.hero-banner {
+display: flex;
+margin-top: 100px;
+justify-content: space-between;
+align-items: center;
+background-color: var(--heliotrope);
+background-image:url(../images/02-hero-bg.jpg);
+height: 100%;
+width:100%;
+}
+
+
+.hero-banner img {
+    width: 10%;
+    margin: 15px;
+    border-radius: 100px;
+}
+
+.hero-banner h2 {
+    padding: 25px;
+    background-color: var(--bright-turquoise);
+    border: 10px;
+    border-style: solid;
+    font-size: 30px;
+}
+
+#heroGrid {
+    margin: 0px 5%;
+    display: grid;
+    min-height: 500px;
+    height: 70vh;
+    grid-template-rows: 20% 70% 10%;
+    grid-template-columns: 12.5% 2.5% 85%;
+    grid-template-areas:
+    "aboutmeT space aboutmeC"
+    "workT space workC"
+    "contactT space contact";
+  }
+  
+
+#aboutmeT {
+
+}
+
+.page-wrapper {
+
+}
+
+.page-section {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.page-section p {
+    border-left: black;
+    border-left-style: solid;
+    border-width: 10px;
+    margin-left: 25px;
+
+
+}
+
+#work {
+
+}
+
+#contact {
+
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .justify-center {
+    justify-content: center;
+  }
